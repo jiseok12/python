@@ -1,0 +1,269 @@
+print 줄 바꿈 을 자동으로 해준다
+
+print('hello')
+print("world")
+출력
+hello
+world
+
+print('hello '+'world')#문자 합치기
+출력
+hello world
+
+문자 객체 이다
+print('hello'*3)
+print('hello'[3])# [인덱싱]
+출력
+hellohellohello
+l
+
+***슬라이싱***
+str
+list
+dics
+
+capitalize()#앞 대문자
+upper()#모두 대문자**
+lower()#전부 소문자**
+__len__/len() #문자열 길이
+replace(A, B)#A문자 를 B로 바꾸기
+
+print(10+5)
+print("10"+"5")
+출력
+15#숫자
+105#문자
+
+if True: #참일때만 가능
+	print("code1")
+else :
+	print("code3")
+출력 
+code1
+
+input = 33
+real_egoing = 11
+real_k8805 = "ab"
+
+if real_egoing == input:
+  print("Hello!, egoing")
+elif real_k8805 == input:#중복 if
+  print("Hello!, k8805")
+else:
+  print("Who are you?")
+
+출력
+Who are you?
+
+in_str = input("입력해주세요.\n")#input입력 받기
+print(in_str.upper()+" World!")
+
+출력
+일력해주세요._<-일력 값
+입력값(대문자)+world
+
+
+프로그래머 아보카도 우유 ㅋㅋㅋㅋㅋㅋ
+
+if 1==0 or 1==1:#or 사용 and 사용 (&& ||)X ***
+
+print(type('busan'])#문자형 객체
+출력
+<class 'str'>
+
+
+print(type(['egoing', 'leezche', 'graphittie']))#list형 객체 
+출력
+<class 'list'>
+
+
+egoing = ['programmer', 'seoul', 25, False]
+egoing[1] = 'busan'
+print(egoing)
+
+a=hst()#리스트 생성
+a[0]="a"#불가능 
+츨력
+error
+
+
+al = ['A', 'B', 'C', 'D']
+print(len(al)) 	# 4
+al.append('E')		#요소 추가
+print(al) 		#['A', 'B', 'C', 'D', 'E']
+del(al[0])		#요소 삭제
+print(al) 		#['B', 'C', 'D', 'E']
+출력
+4
+['A', 'B', 'C', 'D', 'E']
+['B', 'C', 'D', 'E']
+
+
+marks = [90, 25, 67, 45, 80]
+number = 0
+
+for mark in marks :
+	number += 1
+	if mark < 60 : continue #break; 와 같음 (for로 돌아감)
+	print(f"{number}학생은 {mark}참으로 합격입니다.")
+출력
+1학생은 90참으로 합격입니다.
+3학생은 67참으로 합격입니다.
+5학생은 80참으로 합격입니다.
+
+
+
+members = ['egoing', 'leezche', 'graphittie']
+
+for member in members:#리스트 요소 갯수 만큼 반복한다
+    print(member)
+출력
+egoing
+leezche
+graphittie
+
+
+
+range(a,b)는 a부터 b-1까지 1씩증가**
+rnage(a,b,c)는 a부터 b-1까지 a=a+c씩 증가 **
+
+for item in range(5, 11): #5 ~ 10 까지
+    print(item, end = ' ')
+		
+for item in range(1, 11, 2): #1 ~ 10 까지 1부터 2씩 더함
+  print(item, end = ' ')
+출력
+ 5 6 7 8 9 10 1 3 5 7 9 
+
+
+
+oddnumber = [1, 3, 5, 7, 9]
+cafes = ['star', 'bene', 'yoger', 'friends']
+A = [1, 5, 'A', 'CC', 'B']
+listInList = [[1, 3, 5, 6, 7], cafes, oddnumber, 1, 3, 'Abc']
+
+a = oddnumber[1:5]          #oddnumber리스트에 1부터 4까지 출력
+b = cafes[1:]               #cafes리스트에서 1부터 끝까지 출력
+c = A[:2]                   #A리스트에서 처음부터 1까지 출력
+d = listInList[0][1:4]      #리스트 내 리스트 접근
+
+print(a)
+print(b)
+print(c)
+print(d)
+출력
+[3, 5, 7, 9]
+['bene', 'yoger', 'friends']
+[1, 5]
+[3, 5, 6]
+
+
+evennumbers = [2, 4, 6, 8, 10]
+oddnumbers = [1, 3, 5, 7, 9]
+
+numbers = evennumbers + oddnumbers#리스트가 문자령처럼 더해짐
+print(numbers)
+print(numbers * 4)
+출력
+[2, 4, 6, 8, 10, 1, 3, 5, 7, 9]
+[2, 4, 6, 8, 10, 1, 3, 5, 7, 9, 2, 4, 6, 8, 10, 1, 3, 5, 7, 9, 2, 4, 6, 8, 10, 1, 3, 5, 7, 9, 2, 4, 6, 8, 10, 1, 3, 5, 7, 9]
+
+
+별찍기 문제 시험********
+
+
+
+램덤 함수 불러오기 
+import random                     #램덤 함수 라이브러리 불러오기
+numbers = []
+
+while len(numbers)< 6 :
+	number=random.randint(1, 45) #램덤함수 불러오기
+	if number not in numbers :   #중복이 없다면 참
+		numbers.append(number)  #리스트에 램덤값 추가
+
+numbers.sort()#작은 값부터 큰값 자동으로 정렬
+print(numbers)
+출력
+[21, 27, 32, 38, 39, 42]
+
+
+import sys#break;와 같음
+sys.exit()
+
+
+딕셔너리 "key:value"의 형태로 값을 저장
+{나중에
+
+dic1 = {"apple":"사과", "
+
+
+}
+
+
+
+
+mem = {"김구름":25, "박에듀":23, "온라인":24}
+
+print(mem.keys())		 #dict_keys함수 이다
+names = list(mem.keys())  #리스트로 변화
+name = list(mem.value()) #값을 리스트로 변환
+
+
+내장함수****
+
+if __name__=='__main__':#메인 프로그램을 사용될때와 모듈로 사용될때 구분하기 위한 용도
+#이파일이 main댈때만 사용
+
+int() == eval() 같음
+
+팰린드롭 뒤집는 방법 시험 ******{
+
+#def palindrome(string) :
+#	return list(string) == list(reversed(string)) 
+
+#string = input()
+#print(palindrome(string))
+
+def palindrome(string):
+	return string == string[-1::-1]
+
+string = input()
+print(palindrome(string))
+
+#word = input('단어를 입력하세요')
+
+#is_palindrome = True
+#for i in range(len(word) // 2) :
+#	if word[i] != word[-1 - i] :
+#		is_palindrome = False
+#		break;
+		
+#print(is_palindrome)
+
+}
+
+가변인자 활용***
+
+import math #모듈 불러오기
+
+모듈은 재사용 경재적인 활용이 가능하다
+모듈를 묶은 것을 package 이다
+
+예외처리 
+예측하지 못한 갑이 나와도 그것을 유지하기 위하는 것이다
+try ~ except
+ValueError #값 에러
+ZeroDivisionError
+ExceptionError
+
+raise문***
+
+class human:#클래스 이름 정의
+	
+인스턴스*****
+클래스 상속 다중 상속
+
+메소드 오버라이딩: 부모 메서드를 물려받고 거기다 추가하는 것이다 
+super 자식이 부모를 쓰고 십을때 사용
+
